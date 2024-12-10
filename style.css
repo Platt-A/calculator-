@@ -1,0 +1,99 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Soft light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Calculator container */
+#calculator {
+    background-color: #fff; /* White background for the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display */
+#display {
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #f7f7f7;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    /* Operator Buttons */
+    button.operator {
+        background-color: #f0a500; /* Orange for operators */
+        color: white;
+    }
+
+    /* Digit Buttons */
+    button.digit {
+        background-color: #ddd; /* Light grey for digits */
+    }
+
+    /* Clear Button */
+    button#btn-clear {
+        background-color: #ff6347; /* Tomato color for 'Clear' */
+        color: white;
+    }
+
+    /* Equal Button */
+    button#btn-equals {
+        background-color: #28a745; /* Green for '=' */
+        color: white;
+    }
+
+    /* Hover Effects */
+    button:hover {
+        background-color: #ddd; /* Light grey hover effect */
+        transform: scale(1.05);
+    }
+
+    button.operator:hover {
+        background-color: #ff8c00; /* Darker orange for operators on hover */
+    }
+
+    button#btn-clear:hover {
+        background-color: #ff4500; /* Darker red for clear on hover */
+    }
+
+    button#btn-equals:hover {
+        background-color: #218838; /* Darker green for equals on hover */
+    }
+
+    /* Active/Pressed Button */
+    button:active {
+        transform: scale(0.95);
+    }
